@@ -100,12 +100,6 @@ dex_import {
 }
 
 dex_import {
-	name: "mediatek-ims-legacy",
-	owner: "gigaset",
-	jars: ["proprietary/framework/mediatek-ims-legacy.jar"],
-}
-
-dex_import {
 	name: "mediatek-telecom-common",
 	owner: "gigaset",
 	jars: ["proprietary/framework/mediatek-telecom-common.jar"],
