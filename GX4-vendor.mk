@@ -22,6 +22,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/lib/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.3.so \
     vendor/gigaset/GX4/proprietary/lib/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.5.so \
     vendor/gigaset/GX4/proprietary/lib/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq@2.8.so \
+    vendor/gigaset/GX4/proprietary/lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib/vendor.mediatek.hardware.pq_aidl-V1-ndk.so \
     vendor/gigaset/GX4/proprietary/lib64/libccci_util_sys.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libccci_util_sys.so \
     vendor/gigaset/GX4/proprietary/lib64/libcomutils.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libcomutils.so \
     vendor/gigaset/GX4/proprietary/lib64/libem_aoltest_jni.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libem_aoltest_jni.so \
@@ -52,6 +53,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/lib64/vendor.mediatek.hardware.pq@2.3.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.3.so \
     vendor/gigaset/GX4/proprietary/lib64/vendor.mediatek.hardware.pq@2.5.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.5.so \
     vendor/gigaset/GX4/proprietary/lib64/vendor.mediatek.hardware.pq@2.8.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq@2.8.so \
+    vendor/gigaset/GX4/proprietary/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/vendor.mediatek.hardware.pq_aidl-V1-ndk.so \
     vendor/gigaset/GX4/proprietary/lib64/libserial_port_app.so:$(TARGET_COPY_OUT_SYSTEM)/lib64/libserial_port_app.so \
     vendor/gigaset/GX4/proprietary/system_ext/bin/emdlogger1:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/emdlogger1 \
     vendor/gigaset/GX4/proprietary/system_ext/bin/emdlogger2:$(TARGET_COPY_OUT_SYSTEM_EXT)/bin/emdlogger2 \
