@@ -59,16 +59,6 @@ cc_prebuilt_library_shared {
 }
 
 android_app_import {
-	name: "DebugLoggerUI",
-	owner: "gigaset",
-	apk: "proprietary/app/DebugLoggerUI/DebugLoggerUI.apk",
-	certificate: "platform",
-	dex_preopt: {
-		enabled: false,
-	},
-}
-
-android_app_import {
 	name: "EngineerMode",
 	owner: "gigaset",
 	apk: "proprietary/priv-app/EngineerMode/EngineerMode.apk",

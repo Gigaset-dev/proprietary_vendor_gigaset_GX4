@@ -1746,7 +1746,6 @@ PRODUCT_PACKAGES += \
     libfmjni \
     libpowerhal \
     libwifi-hal-mtk \
-    DebugLoggerUI \
     EngineerMode \
     ImsService \
     PriFactoryTest \
