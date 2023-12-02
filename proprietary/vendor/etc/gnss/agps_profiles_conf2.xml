@@ -939,6 +939,9 @@
         enable/disable the MSB capability for galileo
         available value: true (default), false
 
+    customer_ca_path
+        now ca_enable=true by default, so customer may need install SUPL certification. Use this to
+        include customer's SUPL certification path.
   -->
   <up_setting
     ca_enable="true"
@@ -970,7 +973,7 @@
     ut2="11"
     ut3="10"
     sync_to_slp="false"
-    imsi_enable="true"
+    imsi_enable="false"
     no_sensitive_log="true"
     supl_ver_minor="0"
     supl_ver_ser_ind="4"
@@ -1002,6 +1005,7 @@
     beidou_msb_enable="true"
     galileo_msa_enable="true"
     galileo_msb_enable="true"
+    customer_ca_path="odm/etc/gnss/cacerts_supl/"
   />
 
   <!-- carrier_mapping
