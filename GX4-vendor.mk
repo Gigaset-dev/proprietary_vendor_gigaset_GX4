@@ -211,6 +211,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/bin/lbs_hidl_service:$(TARGET_COPY_OUT_VENDOR)/bin/lbs_hidl_service \
     vendor/gigaset/GX4/proprietary/vendor/bin/md_monitor:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor \
     vendor/gigaset/GX4/proprietary/vendor/bin/md_monitor_ctrl:$(TARGET_COPY_OUT_VENDOR)/bin/md_monitor_ctrl \
+    vendor/gigaset/GX4/proprietary/vendor/bin/meta_tst:$(TARGET_COPY_OUT_VENDOR)/bin/meta_tst \
     vendor/gigaset/GX4/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
     vendor/gigaset/GX4/proprietary/vendor/bin/mrdump_tool:$(TARGET_COPY_OUT_VENDOR)/bin/mrdump_tool \
     vendor/gigaset/GX4/proprietary/vendor/bin/mt6660_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/mt6660_calibration \
@@ -1301,6 +1302,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libloadfilterhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libloadfilterhal.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
@@ -1356,6 +1358,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libnwk_opt_halwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnwk_opt_halwrap_vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libnxp_extamp_intf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnxp_extamp_intf.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libperfctl_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libperfctl_vendor.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libpixelflinger.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpixelflinger.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpkm.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
