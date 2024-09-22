@@ -71,8 +71,8 @@
     <Param path="HDR_RECORD,FastRecord,Headset" param_id="6"/>
     <Param path="HDR_RECORD,KTV,Handset" param_id="5"/>
     <Param path="HDR_RECORD,KTV,Headset" param_id="6"/>
-    <Param path="Default,Camera recording,Handset" param_id="7"/>
-    <Param path="Default,Camera recording,Headset" param_id="8"/>
+    <Param path="Default,Camera recording,Headset" param_id="7"/>
+    <Param path="Default,Camera recording,Handset" param_id="8"/>
   </ParamTree>
   <ParamUnitPool>
     <ParamUnit param_id="0">
