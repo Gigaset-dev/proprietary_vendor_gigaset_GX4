@@ -19,6 +19,7 @@
 		<!-- prize add by huarui, support fs1894u, start -->
 			<Category name="smartpa_foursemi_fs16xx"/>
 			<Category name="smartpa_awinic_aw883xx"/>
+			<Category name="smartpa_awinic_aw882xx"/>
 		<!-- prize add by huarui, support fs1894u, end -->
 		</CategoryType>
 	</CategoryTypeList>

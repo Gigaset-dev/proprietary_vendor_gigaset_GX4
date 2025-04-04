@@ -4,6 +4,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
-ifeq ($(TARGET_DEVICE),GX4)
+
+
+ifneq ($(filter GX4 vidofnir,$(TARGET_DEVICE)),)
+
 
 endif

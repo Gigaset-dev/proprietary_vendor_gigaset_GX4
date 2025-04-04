@@ -14,43 +14,10 @@
       "Name": "MemSwappiness",
       "Controller": "memory",
       "File": "memory.swappiness"
-    },
-    {
-      "Name": "FreezerState",
-      "Controller": "freezer",
-      "File": "frozen/freezer.state"
     }
   ],
 
   "Profiles": [
-    {
-      "Name": "Frozen",
-      "Actions": [
-        {
-          "Name": "JoinCgroup",
-          "Params":
-          {
-            "Controller": "freezer",
-            "Path": "frozen"
-          }
-        }
-      ]
-    },
-    {
-      "Name": "Unfrozen",
-      "Actions": [
-        {
-          "Name": "JoinCgroup",
-          "Params":
-          {
-            "Controller": "freezer",
-            "Path": ""
-          }
-        }
-      ]
-    },
-
-
     {
       "Name": "LowIoPriority",
       "Actions": [
@@ -208,32 +175,6 @@
           {
             "Controller": "memory",
             "Path": "system"
-          }
-        }
-      ]
-    },
-    {
-      "Name": "FreezerThawed",
-      "Actions": [
-        {
-          "Name": "SetAttribute",
-          "Params":
-          {
-            "Name": "FreezerState",
-            "Value": "THAWED"
-          }
-        }
-      ]
-    },
-    {
-      "Name": "FreezerFrozen",
-      "Actions": [
-        {
-          "Name": "SetAttribute",
-          "Params":
-          {
-            "Name": "FreezerState",
-            "Value": "FROZEN"
           }
         }
       ]

@@ -1,3 +1,0 @@
-chip:AW88394+MT6789
-product:GX4
-version:GX4-T-V8-20231208
