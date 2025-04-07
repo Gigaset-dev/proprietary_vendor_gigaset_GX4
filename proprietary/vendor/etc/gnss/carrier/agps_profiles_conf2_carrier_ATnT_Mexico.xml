@@ -25,7 +25,7 @@
   />
 
   <up_setting
-    imsi_enable="true"
+    ca_enable="true"
     dedicated_apn_enable="true"
     esupl_apn_mode="3"
   />

@@ -14,8 +14,5 @@ on property:vold.decrypt=trigger_restart_framework
 on property:persist.vendor.em.dy.debug=1
     stop emdlogger
 
-on property:ro.vendor.mtk_protocol1_rat_config=1
-    stop emdlogger
-
 on property:persist.vendor.mdlog.3G=1
     stop emdlogger

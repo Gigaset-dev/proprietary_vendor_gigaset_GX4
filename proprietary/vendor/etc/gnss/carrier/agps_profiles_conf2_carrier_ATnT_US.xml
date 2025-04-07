@@ -27,7 +27,7 @@
   />
 
   <up_setting
-    imsi_enable="true"
+    ca_enable="true"
   />
 
 </mtk_agps_profiles>

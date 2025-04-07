@@ -24,7 +24,7 @@
   />
 
   <up_setting
-    imsi_enable="true"
+    ca_enable="true"
     supl_version="2"
     supl_ver_minor="0"
     supl_ver_ser_ind="4"

@@ -18,8 +18,6 @@
 
   <agps_setting
     ignore_si_for_e911="true"
-    ignore_emergency_ext_secs_from_framework="true"
-    emergency_ext_secs="300"
   />
 
   <gnss_setting
@@ -33,7 +31,7 @@
   />
 
   <up_setting
-    imsi_enable="true"
+    ca_enable="true"
     dedicated_apn_enable="false"
     preferred_2g3g_cell_age="0"
     lpp_enable="false"

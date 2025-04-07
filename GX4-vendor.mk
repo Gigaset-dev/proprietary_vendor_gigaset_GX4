@@ -150,6 +150,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.bluetooth@1.1-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.bluetooth@1.1-service-mediatek \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.drm@1.4-service.widevine:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.drm@1.4-service.widevine \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.gnss-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.gnss-service.mediatek \
+    vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.media.c2@1.2-mediatek-64b:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.media.c2@1.2-mediatek-64b \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.memtrack-service.mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.memtrack-service.mediatek \
@@ -160,8 +161,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.sensors@2.0-service.multihal-mediatek \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.thermal@2.0-service.mtk:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.thermal@2.0-service.mtk \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.usb@1.2-service-mediatekv2:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.usb@1.2-service-mediatekv2 \
-    vendor/gigaset/GX4/proprietary/vendor/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek:$(TARGET_COPY_OUT_VENDOR)/bin/hw/android.hardware.graphics.allocator@4.0-service-mediatek \
-    vendor/gigaset/GX4/proprietary/vendor/bin/hw/mt6789/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mt6789/camerahalserver \
+    vendor/gigaset/GX4/proprietary/vendor/bin/hw/camerahalserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/camerahalserver \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/mtkfusionrild:$(TARGET_COPY_OUT_VENDOR)/bin/hw/mtkfusionrild \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/tetheroffloadservice:$(TARGET_COPY_OUT_VENDOR)/bin/hw/tetheroffloadservice \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-service \
@@ -173,6 +173,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/vendor.mediatek.hardware.pq@2.2-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.mediatek.hardware.pq@2.2-service \
     vendor/gigaset/GX4/proprietary/vendor/bin/hw/vtservice_hidl:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vtservice_hidl \
     vendor/gigaset/GX4/proprietary/vendor/bin/ipsec_mon:$(TARGET_COPY_OUT_VENDOR)/bin/ipsec_mon \
+    vendor/gigaset/GX4/proprietary/vendor/bin/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/jpegtool \
     vendor/gigaset/GX4/proprietary/vendor/bin/lbs_hidl_service:$(TARGET_COPY_OUT_VENDOR)/bin/lbs_hidl_service \
     vendor/gigaset/GX4/proprietary/vendor/bin/lepton-control:$(TARGET_COPY_OUT_VENDOR)/bin/lepton-control \
     vendor/gigaset/GX4/proprietary/vendor/bin/lepton-data-collector:$(TARGET_COPY_OUT_VENDOR)/bin/lepton-data-collector \
@@ -182,9 +183,6 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/bin/mnld:$(TARGET_COPY_OUT_VENDOR)/bin/mnld \
     vendor/gigaset/GX4/proprietary/vendor/bin/mrdump_tool:$(TARGET_COPY_OUT_VENDOR)/bin/mrdump_tool \
     vendor/gigaset/GX4/proprietary/vendor/bin/mt6660_calibration:$(TARGET_COPY_OUT_VENDOR)/bin/mt6660_calibration \
-    vendor/gigaset/GX4/proprietary/vendor/bin/mt6789/jpegtool:$(TARGET_COPY_OUT_VENDOR)/bin/mt6789/jpegtool \
-    vendor/gigaset/GX4/proprietary/vendor/bin/mt6789/v3avpud.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/mt6789/v3avpud.mt6789 \
-    vendor/gigaset/GX4/proprietary/vendor/bin/v3avpud:$(TARGET_COPY_OUT_VENDOR)/bin/v3avpud \
     vendor/gigaset/GX4/proprietary/vendor/bin/mtk_agpsd:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_agpsd \
     vendor/gigaset/GX4/proprietary/vendor/bin/mtk_pkm_service:$(TARGET_COPY_OUT_VENDOR)/bin/mtk_pkm_service \
     vendor/gigaset/GX4/proprietary/vendor/bin/muxreport:$(TARGET_COPY_OUT_VENDOR)/bin/muxreport \
@@ -200,6 +198,8 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/bin/teei_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/teei_daemon \
     vendor/gigaset/GX4/proprietary/vendor/bin/thermal_core:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_core \
     vendor/gigaset/GX4/proprietary/vendor/bin/thermal_intf:$(TARGET_COPY_OUT_VENDOR)/bin/thermal_intf \
+    vendor/gigaset/GX4/proprietary/vendor/bin/v3avpud.mt6789:$(TARGET_COPY_OUT_VENDOR)/bin/v3avpud.mt6789 \
+    vendor/gigaset/GX4/proprietary/vendor/bin/v3avpud:$(TARGET_COPY_OUT_VENDOR)/bin/v3avpud \
     vendor/gigaset/GX4/proprietary/vendor/bin/volte_clientapi_ua:$(TARGET_COPY_OUT_VENDOR)/bin/volte_clientapi_ua \
     vendor/gigaset/GX4/proprietary/vendor/bin/volte_imcb:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imcb \
     vendor/gigaset/GX4/proprietary/vendor/bin/volte_imsm_93:$(TARGET_COPY_OUT_VENDOR)/bin/volte_imsm_93 \
@@ -691,46 +691,151 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/AVCSecureVdecCA.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/HEVCSecureVdecCA.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/VP9SecureVdecCA.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/arm.graphics-V1-ndk_platform.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/egl/egl.cfg:$(TARGET_COPY_OUT_VENDOR)/lib/egl/egl.cfg \
+    vendor/gigaset/GX4/proprietary/vendor/lib/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libGLES_meow.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_data.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_gift.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_qt.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/libMEOW_trace.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/egl/mt6789/libGLES_mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/gc08a3wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc08a3wide_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/gc08a3wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc08a3wide_mipi_raw_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/gc08a8wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc08a8wide_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/gc08a8wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/gc08a8wide_mipi_raw_tuning.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@6.0-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/android.hardware.audio@7.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.audio@7.0-impl-mediatek.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/android.hardware.thermal@2.0-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/audio.primary.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.primary.mt6789.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/audio.r_submix.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/audio.r_submix.mt6789.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/awinic.audio.effect.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/awinic.audio.effect.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gatekeeper.beanpod.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gps.default.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/gralloc.common.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/kmsetkey.beanpod.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/libSoftGatekeeper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/gralloc.common.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/mt6789/vulkan.mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/sound_trigger.primary.default.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/thermal_hal.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mms@1.6-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/hw/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib/hw/vulkan.mali.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.core.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.ae.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.awb.core.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib3a.log.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib/libAVCSecureVencCA.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a3widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a3widemipiraw_Video_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_gc08a8widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_gc08a8widemipiraw_Video_4k.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Coosea_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Coosea_Remosaic.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov16a1qmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov16a1qmipiraw_Video_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_ov50c40mipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_ov50c40mipiraw_Video_4k.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Coosea_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Coosea_Remosaic.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_HDR.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Scene_lowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Scene_lowlight.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Video_1080.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Video_1080_120.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Video_1080_120.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Video_1080_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Video_1080_60.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Video_4k.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libCamera_s5kgm1stmipiraw_Video_Zoom_2x.so:$(TARGET_COPY_OUT_VENDOR)/lib/libCamera_s5kgm1stmipiraw_Video_Zoom_2x.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libDefaultFpsActor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib/libFrameRecord.so \
@@ -749,10 +854,13 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_iir.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib/lib_speech_enh.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_cust_func.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_key.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaal_mtk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaalservice.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libadpcmdec_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaedv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/libaiselector.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapmonitor_vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapu_mdw.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib/libapu_mdw_batch.so \
@@ -783,7 +891,12 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libbluetoothem_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbluetoothem_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbt-vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libbwc.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.hal3a.log.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcam.halsensor.hwintegration.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.platform2.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcamalgo.utility.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.lens.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcameracustom.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libcapctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcapctrl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcares_naptr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcarrierconfig.so \
@@ -808,6 +921,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcustom_nvram.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libcvsd_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdecrypt.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdpframework.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdynamiclog.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfgauge_gm30.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib/libfile_op.so \
@@ -815,6 +929,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib/libged.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpu_aux.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpud.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgpudataproducer.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_extra.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloc_metadata.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libgralloctypes_mtk.so \
@@ -845,7 +960,17 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmp4enc_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_sa.ca7.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmp4enc_xa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmp4enc_xa.ca7.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmsbc_mtk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtk_drvb.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkares.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.atmseventmgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam.eventcallback.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_debugutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_metadata.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_modulehelper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_stdutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_sysutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_tuning_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcam_ulog.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkcutils.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmtkhardware_legacy.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtkhardware_legacy.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmtklimiter_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmtklimiter_vendor.so \
@@ -871,9 +996,12 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmvpu_runtime_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmvpu_runtime_pub.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmvpuop_mtk_cv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmvpuop_mtk_cv.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libmvpuop_mtk_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib/libmvpuop_mtk_nn.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuralnetworks_sl_driver_mtk_prebuilt.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libneuroeara.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuroeara.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuron_adapter_mgvi.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuron_graph_delegate.mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libneuropilot_hal_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/libneuropilot_hal_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnir_neon_driver.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libnpagent.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnpagent.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libnvram_sec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libnvram_sec.so \
@@ -883,7 +1011,10 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpkm.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpower_timer.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpowerhalwrap_vendor.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_cust_base.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpq_prot.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqframework.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpqparamparser.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/librcs_interface.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_interface.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/librcs_volte_core.so:$(TARGET_COPY_OUT_VENDOR)/lib/librcs_volte_core.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/librgbwlightsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib/librgbwlightsensor.so \
@@ -906,7 +1037,11 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libthha.so:$(TARGET_COPY_OUT_VENDOR)/lib/libthha.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib/libudf.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_oal.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libvcodec_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_utility.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libvcodec_utility_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodec_utility_v3a.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv_header_stub.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libvcodecdrv_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvcodecdrv_v3a.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libverno.so:$(TARGET_COPY_OUT_VENDOR)/lib/libverno.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libviagpsrpc.so:$(TARGET_COPY_OUT_VENDOR)/lib/libviagpsrpc.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libvolte_core_shr.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvolte_core_shr.so \
@@ -921,157 +1056,21 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib/libvp9dec_sa.ca7.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvp9dec_sa.ca7.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libvpu5.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpu5.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libvpud_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpud_vcodec.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/libvpudv3a_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/libvpudv3a_vcodec.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libwapi.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwapi.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libwo.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwo.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libwpa_client.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwpa_client.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib/libwvhidl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib/mediadrm/libwvdrmengine.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib/meta_wifi_data.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/arm.graphics-V1-ndk_platform.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/gc08a3wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc08a3wide_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/gc08a3wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc08a3wide_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/gc08a8wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc08a8wide_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/gc08a8wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/gc08a8wide_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.ae.core.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.ae.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.awb.core.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/lib3a.log.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a3widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a3widemipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_gc08a8widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_gc08a8widemipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov16a1qmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov16a1qmipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_ov50c40mipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_ov50c40mipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_1080_60.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_1080_60.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libCamera_s5kgm1stmipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaal_cust_func.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaalservice.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libaiselector.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.hal3a.log.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcam.halsensor.hwintegration.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcamalgo.platform2.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcameracustom.lens.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libcameracustom.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libdpframework.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libgpudataproducer.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtk_drvb.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam.atmseventmgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam.eventcallback.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_debugutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_metadata.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_modulehelper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_stdutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_sysutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_tuning_utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libmtkcam_ulog.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libneuron_adapter_mgvi.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libnir_neon_driver.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_cust_base.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpq_prot.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libpqparamparser.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libvcodec_utility.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodec_utility.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libvcodec_utility_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodec_utility_v3a.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libvcodecdrv.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libvcodecdrv_v3a.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvcodecdrv_v3a.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/libvpudv3a_vcodec.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/libvpudv3a_vcodec.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/ov16a1q_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/ov16a1q_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/ov16a1q_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/ov16a1q_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/ov50c40_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/ov50c40_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/ov50c40_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/ov50c40_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/s5kgm1st_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5kgm1st_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib/mt6789/s5kgm1st_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/mt6789/s5kgm1st_mipi_raw_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/ov16a1q_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov16a1q_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/ov16a1q_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov16a1q_mipi_raw_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/ov50c40_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov50c40_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/ov50c40_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/ov50c40_mipi_raw_tuning.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/s5k2lqsx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k2lqsx_mipi_raw_IdxMgr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/s5k4h7_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5k4h7_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/s5kgm1st_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgm1st_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib/s5kgm1st_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib/s5kgm1st_mipi_raw_tuning.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib/soundfx/libaudiopreprocessing_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/vendor.mediatek.hardware.apmonitor@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.apmonitor@2.0.so \
     vendor/gigaset/GX4/proprietary/vendor/lib/vendor.mediatek.hardware.apuware.utils@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.mediatek.hardware.apuware.utils@2.0.so \
@@ -1128,18 +1127,25 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/AVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/AVCSecureVdecCA.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/HEVCSecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/HEVCSecureVdecCA.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/VP9SecureVdecCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/VP9SecureVdecCA.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/arm.graphics-V1-ndk_platform.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/egl/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/egl/libGLES_meow.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libGLES_meow.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/egl/libMEOW_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_data.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/egl/libMEOW_gift.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_gift.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/egl/libMEOW_qt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_qt.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/egl/libMEOW_trace.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/libMEOW_trace.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/egl/mt6789/libGLES_mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/egl/mt6789/libGLES_mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/gc08a3wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc08a3wide_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/gc08a3wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc08a3wide_mipi_raw_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/gc08a8wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc08a8wide_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/gc08a8wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/gc08a8wide_mipi_raw_tuning.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@6.0-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.audio@7.0-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.bluetooth@1.1-impl-mediatek.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.camera.provider@2.6-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.gnss-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.gnss@2.1-impl-mediatek.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.sensors@2.X-subhal-mediatek.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/android.hardware.thermal@2.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/android.hardware.thermal@2.0-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/audio.primary.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/audio.primary.mt6789.so \
@@ -1148,32 +1154,50 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/fingerprint.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/fingerprint.mt6789.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/gatekeeper.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gatekeeper.beanpod.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/gps.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gps.default.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/gralloc.common.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/hwcomposer.mtk_common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/hwcomposer.mtk_common.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/kmsetkey.beanpod.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/kmsetkey.beanpod.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/libSoftGatekeeper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/libSoftGatekeeper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.camera.provider@2.6-impl-mediatek.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.allocator@4.0-impl-mediatek.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/android.hardware.graphics.mapper@4.0-impl-mediatek.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/gralloc.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/gralloc.common.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.ccap@1.0-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.0-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vendor.mediatek.hardware.pq@2.15-impl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/mt6789/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/mt6789/vulkan.mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/sensors.mt6789.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sensors.mt6789.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/sound_trigger.primary.default.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.default.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/thermal_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/thermal_hal.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.1-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.bluetooth.audio@2.2-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.atms@1.0-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.bgservice@1.1-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.ccap@1.0-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.0-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.isphal@1.1-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.camera.lomoeffect@1.0-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.keymaster_attestation@1.1-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mms@1.6-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.mtkpower@1.2-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.nvram@1.1-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.pq@2.15-impl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.mediatek.hardware.videotelephony@1.0-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/hw/vulkan.mali.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.mali.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/lbs_hidl_service-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lbs_hidl_service-impl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.core.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ae.stat.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.assist.utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.core.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.af.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.alsflicker.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.awb.core.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.ccudrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ccudrv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.ccuif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.ccuif.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.custom.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.custom.ae.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.dce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.dce.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.flicker.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.gma.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.lce.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.log.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.n3d3a.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.sensors.color.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib3a.sensors.flicker.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libAVCSecureVencCA.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAVCSecureVencCA.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libAcceReader.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAcceReader.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libAlgoUtils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libAlgoUtils.so \
@@ -1184,12 +1208,110 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libBSTSWAD.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTSWAD.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libBSTSingleAIBokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBSTSingleAIBokeh.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libBstFaceUlkImpl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libBstFaceUlkImpl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a3widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a3widemipiraw_Video_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_gc08a8widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_gc08a8widemipiraw_Video_4k.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Coosea_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Coosea_Remosaic.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov16a1qmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov16a1qmipiraw_Video_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Video_1080.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_ov50c40mipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_ov50c40mipiraw_Video_4k.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Coosea_Remosaic.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Coosea_Remosaic.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Face_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Flash_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_HDR_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_HDR_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_HDR_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_N3D_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_N3D_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_N3D_Video.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_P1_YUV.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_Capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_HDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_HDR.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_Preview.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Scene_lowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Scene_lowlight.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Video_1080.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Video_1080_120.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Video_1080_120.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Video_1080_60.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Video_1080_60.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Video_4k.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libCamera_s5kgm1stmipiraw_Video_Zoom_2x.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libCamera_s5kgm1stmipiraw_Video_Zoom_2x.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDR.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libDefaultFpsActor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libDefaultFpsActor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libFrameRecord.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libFrameRecord.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libJpgEncPipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libJpgEncPipe.so \
@@ -1199,6 +1321,14 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libOpenCL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libOpenCL.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libSQLiteModule_VER_ALL.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSQLiteModule_VER_ALL.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libSingleAIBokehUtils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSingleAIBokehUtils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX230PdafLibrary.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX230PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX230PdafLibraryWrapper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX338PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX338PdafLibrary.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX338PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX338PdafLibraryWrapper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX386PdafLibrary.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX386PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX386PdafLibraryWrapper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX519PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX519PdafLibrary.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libSonyIMX519PdafLibraryWrapper.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libTEECommon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libTEECommon.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libVkLayer_mtk_rt_sdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libVkLayer_mtk_rt_sdk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/lib_eara_io_scndet.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_scndet.so \
@@ -1208,11 +1338,25 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/lib_eara_io_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_eara_io_util.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/lib_iir.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_iir.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/lib_speech_enh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib_speech_enh.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_ltm.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaaa_ltmx.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libaal_cust.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_cust_func.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libaal_key.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_key.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libaal_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaal_mtk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaalservice.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libacdk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libadpcmdec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libadpcmdec_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libaedv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaedv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_moon.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_p1ggm.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiawb_sun.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning_p2.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning_p3.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaibc_tuning_p4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaibc_tuning_p4.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaidepth_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libaiselector.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libapmonitor_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapmonitor_vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libapu_mdw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libapu_mdw_batch.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libapu_mdw_batch.so \
@@ -1246,19 +1390,67 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libbst_beauty_algoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbst_beauty_algoutils.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libbt-vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbt-vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libbwc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libbwc.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.afhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.afhal.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.chdr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.feature_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.cctsvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.cctsvr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.log.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ae.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.ai3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.ai3a.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.awb.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.dng.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.fsmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.fsmgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.lscMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.lscMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.lsctbl.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.lsctbl.50.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.nvram.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.nvram.50.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.platform.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.resultpool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.resultpool.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.hal3a.v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.hal3a.v3.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.halisp.buf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.buf.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.halisp.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.common.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.halisp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halisp.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halsensor.hwintegration.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.halsensor.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.iopipe.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.isptuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.isptuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.pdtblgen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.pdtblgen.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.seninfn3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.seninfn3d.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.tuning.cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.tuning.cache.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.utils.sensorprovider.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcam.vhdr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.3dnr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.dngop.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.dngop.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.eis.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.eis.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.fdft.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fdft.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.fsc.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.gyro.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.gyro.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.ispfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.ispfeature.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lmv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.lsc.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.n3d.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.n3d.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.nr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.nr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.platform2.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.rotate.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.utility.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.utility.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.vsf.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcamalgo.warp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamalgo.warp.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv_isp.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv_tuning_mgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamdrv_twin.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamera.custom.pd_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.custom.pd_buf_mgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customae.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamera.customaf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customaf.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamera.customawb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customawb.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcamera.customflk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.3a.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.isp.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera.sensors.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.camera_exif.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.flashlight.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.lens.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.plugin.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcameracustom.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcapctrl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcapctrl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcares_naptr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcares_naptr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcarrierconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcarrierconfig.so \
@@ -1284,9 +1476,21 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcustom_nvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcustom_nvram.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libcvsd_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libcvsd_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libdecrypt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdecrypt.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_drv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdip_postproc.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdpframework.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libdynamiclog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libdynamiclog.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libeffecthal.base.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libem_sensor_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libem_sensor_jni.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libfcell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfcell.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.face.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.stereo.provider.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature.vsdof.hal.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature_3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_3dnr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_fsc.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_lmv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeature_rss.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfeatureiodrv_mem.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libfft_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfft_vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libfgauge_gm30.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfgauge_gm30.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libfile_op.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libfile_op.so \
@@ -1295,6 +1499,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libged.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libged.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libgpu_aux.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpu_aux.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libgpud.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpud.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgpudataproducer.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libgralloc_extra.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_extra.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libgralloc_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloc_metadata.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libgralloctypes_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libgralloctypes_mtk.so \
@@ -1313,6 +1518,9 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libicd_decoder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libicd_decoder.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libifcutils_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libifcutils_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libimagebuffer_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimagebuffer_wrapper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageio.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageio_plat_drv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimageio_plat_pipe.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libimgsensorca.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimgsensorca.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libimsg_log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libimsg_log.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libion_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libion_mtk.so \
@@ -1324,21 +1532,32 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libkmsetkey.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libkmsetkey.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libksensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libksensor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libladder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libladder.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/liblpcnr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libminiui.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libminiui.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmipc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmipc.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmmagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmagent.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmml.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmml.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmmprofile.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmmprofile.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmnetlink_v104.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnetlink_v104.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmnl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmorpho_GroupPhoto.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_GroupPhoto.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmorpho_MotionSensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_MotionSensor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmorpho_Superlowlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_Superlowlight.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmorpho_superlowlight_algoutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmorpho_superlowlight_algoutils.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmp3dec_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmp3dec_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmsbc_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsbc_mtk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmsnr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtk-fusion-ril-prop-vsim.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-fusion-ril-prop-vsim.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtk-ril.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk-ril.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtk_drvb.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkares.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkares.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.atmseventmgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.eventcallback.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.depthmap.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.streaming.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.featurepipe.vsdof_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.featurepipe.vsdof_util.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.logicalmodule.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.plugin.cap.3ddns.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.cap.3ddns.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.plugin.cap.aibokeh.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.cap.aibokeh.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.plugin.cap.beauty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.cap.beauty.so \
@@ -1352,7 +1571,63 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.plugin.prv.backlightdetect.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.prv.backlightdetect.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.plugin.prv.motionsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.prv.motionsensor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam.plugin.prv.swad.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam.plugin.prv.swad.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_3rdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.core.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_3rdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.customer.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_3rdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.mtk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_3rdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_3rdparty.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_convertor.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_calibration_provider.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_debugutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_device3_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_device3_app.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_device3_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_device3_hal.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_device3_hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_device3_hidl.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_device3_hidlutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_device3_hidlutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_device3_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_device3_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_devicesessionpolicy.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_diputils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_exif.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_fdvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fdvt.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_featurepolicy.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_featureutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_featureutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_fwkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_fwkutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_grallocutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwnode.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_hwutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_imem.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_imgbuf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_imgbuf.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_mapping_mgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metadata.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_metastore.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_mfb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_mfb.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_modulefactory_aaa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_aaa.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_custom.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_modulefactory_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_drv.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulefactory_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_modulehelper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_owe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_owe.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipeline_fbm.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_adapter.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_capture.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_isp.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_session.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinemodel_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinemodel_zsl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-aov.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-aov.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-security.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy-smvr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_pipelinepolicy_factory.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_prerelease.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_rsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_rsc.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_scenariorecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_scenariorecorder.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_stdutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_streamutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_synchelper.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_sysutils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_tuning_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcam_ulog.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfig.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkconfigutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkconfigutils.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmtkcutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmtkcutils.so \
@@ -1386,9 +1661,13 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmvpu_runtime_pub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpu_runtime_pub.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmvpuop_mtk_cv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop_mtk_cv.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libmvpuop_mtk_nn.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libmvpuop_mtk_nn.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuralnetworks_sl_driver_mtk_prebuilt.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libneuroeara.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuroeara.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_adapter_mgvi.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libneuron_graph_delegate.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_graph_delegate.mtk.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libneuron_runtime.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuron_runtime.5.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libneuropilot_hal_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libneuropilot_hal_utils.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnir_neon_driver.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libnpagent.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpagent.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libnpagent_server.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnpagent_server.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libnvram.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libnvram.so \
@@ -1400,7 +1679,10 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpkm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpkm.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpower_timer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpower_timer.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpowerhalwrap_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpowerhalwrap_vendor.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpq_cust_base.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpq_prot.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libpqframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqframework.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpqparamparser.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libprizeem_sensor_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libprizeem_sensor_jni.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libratconfig.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libratconfig.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libremosaic_wrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libremosaic_wrapper.so \
@@ -1418,6 +1700,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libspeechparser_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libspeechparser_vendor.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libssl-md.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libssl-md.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libstagefrighthw.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstagefrighthw.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstereoinfoaccessor_vsdof.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libstorage_otp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstorage_otp.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libstrongswan.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libstrongswan.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libsysenv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libsysenv.so \
@@ -1428,6 +1711,7 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libtranslator_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtranslator_utils.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libtrm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libtrm.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libudf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libudf.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvainr_model.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libvcodec_oal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodec_oal.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libvcodecdrv_header_stub.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libvcodecdrv_header_stub.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libverno.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libverno.so \
@@ -1448,303 +1732,17 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/lib64/libwvhidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libwvhidl.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/mediadrm/libwvdrmengine.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mediadrm/libwvdrmengine.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/meta_wifi_data.so:$(TARGET_COPY_OUT_VENDOR)/lib64/meta_wifi_data.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/arm.graphics-V1-ndk_platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/arm.graphics-V1-ndk_platform.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/gc08a3wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc08a3wide_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/gc08a3wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc08a3wide_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/gc08a8wide_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc08a8wide_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/gc08a8wide_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/gc08a8wide_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.ae.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.core.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.ae.stat.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ae.stat.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.af.assist.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.assist.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.af.assist.utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.assist.utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.af.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.core.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.af.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.af.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.alsflicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.alsflicker.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.awb.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.awb.core.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.ccudrv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ccudrv.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.ccuif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.ccuif.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.custom.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.custom.ae.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.dce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.dce.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.flicker.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.gma.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.gma.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.lce.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.lce.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.log.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.n3d3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.n3d3a.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.sensors.color.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.sensors.color.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/lib3a.sensors.flicker.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/lib3a.sensors.flicker.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a3widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a3widemipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_gc08a8widemipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_gc08a8widemipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Reconfig_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov16a1qmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov16a1qmipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Reconfig_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_ov50c40mipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_ov50c40mipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_E2EHDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Face_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Face_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Flash_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Flash_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Reconfig_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_HDR_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_N3D_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_N3D_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_N3D_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_N3D_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_N3D_Video.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_N3D_Video.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_P1_YUV.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_P1_YUV.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Capture_4cell.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Scene_Preview_ZSD_Flash.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Video_1080.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Video_1080.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Video_1080_60.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Video_1080_60.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libCamera_s5kgm1stmipiraw_Video_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libCamera_s5kgm1stmipiraw_Video_4k.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libDR.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libDR.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX230PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX230PdafLibrary.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX230PdafLibraryWrapper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX338PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX338PdafLibrary.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX338PdafLibraryWrapper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX386PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX386PdafLibrary.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX386PdafLibraryWrapper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX519PdafLibrary.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX519PdafLibrary.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libSonyIMX519PdafLibraryWrapper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaaa_ltm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltm.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaaa_ltmx.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaaa_ltmx.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaal_cust_func.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaal_cust_func.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaalservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaalservice.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libacdk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libacdk.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaiawb_moon.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_moon.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaiawb_p1ggm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_p1ggm.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaiawb_sun.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiawb_sun.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaibc_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaibc_tuning_p2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p2.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaibc_tuning_p3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p3.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaibc_tuning_p4.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaibc_tuning_p4.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaidepth_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaidepth_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libaiselector.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libaiselector.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.afhal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.afhal.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.chdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.chdr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.feature_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.feature_utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.cctsvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.cctsvr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.log.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.log.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.ae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.ae.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.ai3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.ai3a.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.awb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.awb.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.dng.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.dng.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.fsmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.fsmgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.lscMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.lscMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.lsctbl.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.lsctbl.50.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.nvram.50.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.nvram.50.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.platform.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.platform.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.resultpool.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.resultpool.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.hal3a.v3.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.hal3a.v3.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.halisp.buf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.buf.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.halisp.common.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.common.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.halisp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halisp.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.halsensor.hwintegration.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halsensor.hwintegration.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.halsensor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.halsensor.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.iopipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.iopipe.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.isptuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.isptuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.pdtblgen.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.pdtblgen.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.tuning.cache.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.tuning.cache.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.utils.sensorprovider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.utils.sensorprovider.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcam.vhdr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcam.vhdr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamalgo.ispfeature.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.ispfeature.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamalgo.lsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.lsc.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamalgo.platform2.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.platform2.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamalgo.rotate.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.rotate.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamalgo.vsf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamalgo.vsf.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamdrv_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_isp.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamdrv_tuning_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_tuning_mgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamdrv_twin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamdrv_twin.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamera.custom.pd_buf_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.custom.pd_buf_mgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamera.customae.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customae.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamera.customaf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customaf.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamera.customawb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customawb.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcamera.customflk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcamera.customflk.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.camera.3a.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.3a.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.camera.isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.isp.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.camera.sensors.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera.sensors.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.camera_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.camera_exif.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.flashlight.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.flashlight.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.lens.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.lens.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.plugin.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.plugin.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libcameracustom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libcameracustom.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libdip_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdip_drv.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libdip_postproc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdip_postproc.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libdpframework.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libdpframework.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libeffecthal.base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libeffecthal.base.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature.face.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.face.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature.stereo.provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.stereo.provider.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature.vsdof.hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature.vsdof.hal.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature_3dnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_3dnr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature_fsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_fsc.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature_lmv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_lmv.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeature_rss.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeature_rss.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libfeatureiodrv_mem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libfeatureiodrv_mem.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libgpudataproducer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libgpudataproducer.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libimageio.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libimageio_plat_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio_plat_drv.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libimageio_plat_pipe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libimageio_plat_pipe.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/liblpcnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/liblpcnr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmnl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmnl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmsnr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmsnr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtk_drvb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtk_drvb.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.atmseventmgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.atmseventmgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.eventcallback.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.eventcallback.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.depthmap.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.depthmap.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.streaming.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.streaming.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.featurepipe.vsdof_util.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.featurepipe.vsdof_util.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam.logicalmodule.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam.logicalmodule.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.core.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.core.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.customer.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.customer.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.mtk.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_3rdparty.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_3rdparty.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_calibration_convertor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_calibration_convertor.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_calibration_provider.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_calibration_provider.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_debugutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_debugutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_device3_app.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_app.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hal.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hidl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hidl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_device3_hidlutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_hidlutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_device3_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_device3_utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_devicesessionpolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_devicesessionpolicy.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_diputils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_diputils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_exif.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_exif.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_fdvt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_fdvt.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_featurepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_featurepolicy.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_featureutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_featureutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_fwkutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_fwkutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_grallocutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_grallocutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_hwnode.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_hwnode.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_hwutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_hwutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_imem.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_imem.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_imgbuf.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_imgbuf.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_mapping_mgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_mapping_mgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_metadata.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_metadata.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_metastore.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_metastore.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_mfb.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_mfb.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_aaa.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_aaa.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_custom.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_custom.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_drv.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_drv.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_modulefactory_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulefactory_utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_modulehelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_modulehelper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_owe.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_owe.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipeline.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipeline.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipeline_fbm.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipeline_fbm.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_adapter.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_adapter.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_capture.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_capture.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_isp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_isp.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_session.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_session.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinemodel_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinemodel_zsl.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-security.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy-security.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy-smvr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_pipelinepolicy_factory.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_pipelinepolicy_factory.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_prerelease.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_prerelease.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_rsc.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_rsc.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_scenariorecorder.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_scenariorecorder.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_stdutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_stdutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_streamutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_streamutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_synchelper.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_synchelper.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_sysutils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_sysutils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_tuning_utils.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_tuning_utils.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libmtkcam_ulog.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libmtkcam_ulog.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuralnetworks_sl_driver_mtk_prebuilt.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libneuron_adapter_mgvi.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuron_adapter_mgvi.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libneuron_runtime.5.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libneuron_runtime.5.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libnir_neon_driver.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libnir_neon_driver.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libpq_cust_base.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_cust_base.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libpq_prot.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpq_prot.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libpqparamparser.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libpqparamparser.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libstereoinfoaccessor_vsdof.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libstereoinfoaccessor_vsdof.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/libvainr_model.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/libvainr_model.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/ov16a1q_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/ov16a1q_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/ov16a1q_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/ov16a1q_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/ov50c40_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/ov50c40_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/ov50c40_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/ov50c40_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/s5kgm1st_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5kgm1st_mipi_raw_IdxMgr.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mt6789/s5kgm1st_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mt6789/s5kgm1st_mipi_raw_tuning.so \
-    vendor/gigaset/GX4/proprietary/vendor/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/mt6789/libmtkcam_streaminfo_plugin-p1stt.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so:$(TARGET_COPY_OUT_VENDOR)/lib64/mtkcam/libmtkcam_streaminfo_plugin-p1stt.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/nfc_nci.st21nfc.st.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nfc_nci.st21nfc.st.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/nwk_opt_imp.so:$(TARGET_COPY_OUT_VENDOR)/lib64/nwk_opt_imp.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/ov16a1q_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov16a1q_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/ov16a1q_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov16a1q_mipi_raw_tuning.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/ov50c40_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov50c40_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/ov50c40_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/ov50c40_mipi_raw_tuning.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/s5k2lqsx_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5k2lqsx_mipi_raw_IdxMgr.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/s5k4h7_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5k4h7_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/s5kgm1st_mipi_raw_IdxMgr.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5kgm1st_mipi_raw_IdxMgr.so \
+    vendor/gigaset/GX4/proprietary/vendor/lib64/s5kgm1st_mipi_raw_tuning.so:$(TARGET_COPY_OUT_VENDOR)/lib64/s5kgm1st_mipi_raw_tuning.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/soundfx/libaudiopreprocessing_mtk.so:$(TARGET_COPY_OUT_VENDOR)/lib64/soundfx/libaudiopreprocessing_mtk.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/vendor.mediatek.hardware.apmonitor@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apmonitor@2.0.so \
     vendor/gigaset/GX4/proprietary/vendor/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so:$(TARGET_COPY_OUT_VENDOR)/lib64/vendor.mediatek.hardware.apuware.apusys@2.0.so \
