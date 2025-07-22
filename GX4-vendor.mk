@@ -51,7 +51,6 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/system_ext/lib64/libem_bleoffload_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libem_bleoffload_jni.so \
     vendor/gigaset/GX4/proprietary/system_ext/lib64/libem_support_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libem_support_jni.so \
     vendor/gigaset/GX4/proprietary/system_ext/lib64/libem_wifi_jni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libem_wifi_jni.so \
-    vendor/gigaset/GX4/proprietary/system_ext/lib64/libfmjni.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libfmjni.so \
     vendor/gigaset/GX4/proprietary/system_ext/lib64/libimsma.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma.so \
     vendor/gigaset/GX4/proprietary/system_ext/lib64/libimsma_adapt.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_adapt.so \
     vendor/gigaset/GX4/proprietary/system_ext/lib64/libimsma_rtp.so:$(TARGET_COPY_OUT_SYSTEM_EXT)/lib64/libimsma_rtp.so \
@@ -1825,7 +1824,6 @@ PRODUCT_COPY_FILES += \
     vendor/gigaset/GX4/proprietary/vendor/thh/ta/isee_model.json:$(TARGET_COPY_OUT_VENDOR)/thh/ta/isee_model.json
 
 PRODUCT_PACKAGES += \
-    libfmjni \
     libpowerhal \
     libwifi-hal-mtk \
     PriFactoryTest \
